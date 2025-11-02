@@ -1,0 +1,251 @@
+<!doctype html> 
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Cafe Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap');
+
+        .cafe-card {
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .cafe-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #ffeef8 0%, #f0f9ff 50%, #fef3e2 100%);
+        }
+
+        .heart-float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .cafe-svg {
+            transition: transform 0.3s ease;
+        }
+
+        .cafe-card:hover .cafe-svg {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen">
+<div class="container mx-auto px-4 py-8">
+    <header class="text-center mb-12">
+        <div class="inline-block relative">
+            <h1 class="text-5xl font-bold mb-4" style="color: #ec4899; font-family: 'Prompt', sans-serif;">
+                📸 10 คาเฟ่สุดชิคย่านบางรักถ่ายรูปโคตรสวย
+            </h1>
+            <div class="heart-float absolute -top-2 -right-8 text-2xl">✨</div>
+        </div>
+        <p class="text-xl mb-6" style="color: #7c3aed; font-family: 'Sarabun', sans-serif;">
+            คาเฟ่ฮิตย่านบางรักที่สายถ่ายรูปต้องไม่พลาด
+        </p>
+        <p class="text-lg max-w-2xl mx-auto" style="color: #6366f1; font-family: 'Sarabun', sans-serif;">
+            ค้นพบคาเฟ่สุดน่ารักที่จะทำให้วันของคุณหวานขึ้น ด้วยบรรยากาศพาสเทลและเมนูสุดพิเศษ
+        </p>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #fdf2f8, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/16/f4/e1/48/the-facade-of-the-building.jpg"
+                     alt="Sarnies Cafe"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #ec4899; font-family: 'Prompt', sans-serif;">Sarnies</h3>
+            <p class="text-sm mb-3" style="color: #be185d; font-family: 'Sarabun', sans-serif;">
+                All day brunch - บรันช์ตลอดวันในบรรยากาศสบาย ๆ
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #fce7f3; color: #be185d; font-family: 'Sarabun', sans-serif;">⭐ 4.5</span>
+                <a href="https://maps.app.goo.gl/wcaPJknS97NvFDLE9" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #9d174d; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #f0f9ff, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://www.bkmagazine.com/wp-content/uploads/2025/07/pastry_case_1-1024x819.jpg"
+                     alt="Sarnies Sourdough"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #2563eb; font-family: 'Prompt', sans-serif;">Sarnies Sourdough</h3>
+            <p class="text-sm mb-3" style="color: #1d4ed8; font-family: 'Sarabun', sans-serif;">
+                Artisan sourdough - ขนมปังเซาร์โดว์คุณภาพสูง
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #dbeafe; color: #1d4ed8; font-family: 'Sarabun', sans-serif;">⭐ 4.6</span>
+                <a href="https://maps.app.goo.gl/Vs2fTJtHmGrXQFVAA" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #1e40af; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #f7fee7, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://img.wongnai.com/p/400x0/2023/01/16/aa1a519f321f4ae19148ae45eb0f87d9.jpg"
+                     alt="บุษบาคาเฟ่"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #65a30d; font-family: 'Prompt', sans-serif;">บุษบาคาเฟ่</h3>
+            <p class="text-sm mb-3" style="color: #4d7c0f; font-family: 'Sarabun', sans-serif;">
+                Thai traditional - คาเฟ่สไตล์ไทยดั้งเดิม บรรยากาศอบอุ่น
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #ecfccb; color: #4d7c0f; font-family: 'Sarabun', sans-serif;">⭐ 4.8</span>
+                <a href="https://maps.app.goo.gl/9knZ3eWGp6XsDSUs8" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #365314; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #fefce8, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://themomentum.co/wp-content/uploads/2023/05/Web_Wide-Screen-1280x720px_Mad-Sugar-1280x720.jpg"
+                     alt="Mad Sugar Home Café"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #d97706; font-family: 'Prompt', sans-serif;">Mad Sugar Home Café</h3>
+            <p class="text-sm mb-3" style="color: #b45309; font-family: 'Sarabun', sans-serif;">
+                Homemade desserts - ของหวานโฮมเมดสุดอร่อย
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #fef3c7; color: #b45309; font-family: 'Sarabun', sans-serif;">⭐ 4.6</span>
+                <a href="https://maps.app.goo.gl/g2Zq8EJ3C7WcQb1L6" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #92400e; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #faf5ff, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://www.bkmagazine.com/wp-content/uploads/2025/07/pastry_case_1-1024x819.jpg" 
+                     alt="ABBA BANGKOK"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #7c3aed; font-family: 'Prompt', sans-serif;">ABBA BANGKOK</h3>
+            <p class="text-sm mb-3" style="color: #6d28d9; font-family: 'Sarabun', sans-serif;">
+                Premium cafe - คาเฟ่พรีเมียมระดับสูง บรรยากาศหรูหรา
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #f3e8ff; color: #6d28d9; font-family: 'Sarabun', sans-serif;">⭐ 4.9</span>
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRL2A1S4yZczHOdXalgxaacXS9B1k-gj0HXnoCW8Es3csWlX0f-xKeQZg&s=10" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #581c87; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #fff1f2, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://ak-d.tripcdn.com/images/1mi0g2215fnflryltB32B_W_640_0_R5_Q80.jpg?proc=source/trip"
+                     alt="H.O.P. coffee bar"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #dc2626; font-family: 'Prompt', sans-serif;">H.O.P. coffee bar</h3>
+            <p class="text-sm mb-3" style="color: #b91c1c; font-family: 'Sarabun', sans-serif;">
+                Specialty coffee - กาแฟสเปเชียลตี้คุณภาพเยี่ยม
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #ffe4e6; color: #b91c1c; font-family: 'Sarabun', sans-serif;">⭐ 4.9</span>
+                <a href="https://maps.app.goo.gl/xdMiU3WB6u1KCVGT8" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #991b1b; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #f0fdfa, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://images.hungryhub.com/uploads/restaurants/5315/photos/154196/RackMultipart20241220-139-1q6eyw3.jpg"
+                     alt="Panna Sourdough Craft Cafe"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #0d9488; font-family: 'Prompt', sans-serif;">Panna Sourdough Craft Cafe</h3>
+            <p class="text-sm mb-3" style="color: #0f766e; font-family: 'Sarabun', sans-serif;">
+                Artisan bakery - เบเกอรี่ฝีมือช่าง ขนมปังสดใหม่ทุกวัน
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #ccfbf1; color: #0f766e; font-family: 'Sarabun', sans-serif;">⭐ 4.8</span>
+                <a href="https://maps.app.goo.gl/KoQDLxN1VfKom8pbA" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #134e4a; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #fdf4ff, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://assets.brandinside.asia/uploads/2025/10/beans-696x522.jpg"
+                     alt="BEANS Coffee Roaster"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #a21caf; font-family: 'Prompt', sans-serif;">BEANS Coffee Roaster</h3>
+            <p class="text-sm mb-3" style="color: #86198f; font-family: 'Sarabun', sans-serif;">
+                Coffee roastery - โรงคั่วกาแฟ เมล็ดกาแฟคุณภาพสูง
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #fae8ff; color: #86198f; font-family: 'Sarabun', sans-serif;">⭐ 4.9</span>
+                <a href="https://maps.app.goo.gl/S49kMGArEbhW1H5a6" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #701a75; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #fffbeb, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://autolifethailand.tv/wp-content/uploads/2024/10/IMG_3461.jpeg"
+                     alt="Togeta Coffee Flagship"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #d97706; font-family: 'Prompt', sans-serif;">Togeta Coffee Flagship</h3>
+            <p class="text-sm mb-3" style="color: #b45309; font-family: 'Sarabun', sans-serif;">
+                Premium coffee - กาแฟพรีเมียม สาขาหลักสุดพิเศษ
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #fef3c7; color: #b45309; font-family: 'Sarabun', sans-serif;">⭐ 4.7</span>
+                <a href="https://maps.app.goo.gl/hgVeQhMU6e2GyTKW6" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #92400e; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+        <div class="cafe-card rounded-3xl p-6 shadow-lg" style="background: linear-gradient(145deg, #f8fafc, #ffffff);">
+            <div class="w-full h-48 rounded-2xl mb-4 overflow-hidden">
+                <img src="https://themomentum.co/wp-content/uploads/2023/05/Web_Wide-Screen-1280x720px_Mad-Sugar-1280x720.jpg" 
+                     alt="Camelot Café"
+                     class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2" style="color: #475569; font-family: 'Prompt', sans-serif;">Camelot Café</h3>
+            <p class="text-sm mb-3" style="color: #64748b; font-family: 'Sarabun', sans-serif;">
+                Cozy neighborhood - คาเฟ่ย่านใกล้บ้าน บรรยากาศอบอุ่น
+            </p>
+            <div class="flex items-center justify-between">
+                <span class="text-xs px-3 py-1 rounded-full" style="background: #f1f5f9; color: #64748b; font-family: 'Sarabun', sans-serif;">⭐ 4.0</span>
+                <a href="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxH8NWA6RBCM19tutw1lkj9g9xLyzN3lxwirlKhD-fOo7VtH6ZJYy9haPf8tSIMeVB0EFfr0MiiDBoeEQ1vH1vyRJaR9fu5qj6EasCj0trphx6kUQ1kfCb4qalVVkPpDz-gulYhsE58MhR3=s1324-w720-h1324-rw" target="_blank" rel="noopener noreferrer"
+                   class="text-xs hover:underline" style="color: #334155; font-family: 'Sarabun', sans-serif;">📍 ดูแผนที่</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center mt-16 py-8">
+        <div class="inline-flex items-center gap-2 text-lg" style="color: #ec4899; font-family: 'Prompt', sans-serif;">
+            <span>💕</span>
+            <span>สนุกกับการเที่ยวคาเฟ่นะคะ</span>
+            <span>💕</span>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
